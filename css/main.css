@@ -33,6 +33,7 @@ h1 {
     font-size: 23px;
     font-weight: 700;
     margin-bottom: 18px;
+    margin: 0;
 }
 .intro {
     margin: 0;
@@ -72,6 +73,7 @@ ul, li {
 }
 .main-page-test {
     background: #fff;
+    padding: 73px 0 0 0;
 }
 .test-cards {
     display: flex;
@@ -81,7 +83,10 @@ ul, li {
 }
 .section-title {
     width: 406px;
-    margin-top: 74px;
+    
+}
+.intro {
+    margin-top: 24px;
 }
 .test {
     border: 1px solid #D6D6D6;
@@ -115,13 +120,16 @@ ul, li {
 .section {
     display: flex;
     justify-content: space-between;
-    margin-top: 92px;
-    margin-bottom: 47px;
+    
+    
     box-sizing: border-box;
 }
-.sendform {
-    box-sizing: border-box;
+
+.section-padding {
+    padding-top: 92px;
+    padding-bottom: 47px;
 }
+
 .sendform h2{
     margin-top: 0;
     margin-bottom: 35px;
@@ -170,8 +178,6 @@ ul, li {
 }
 .sendform {
     width: 360px;
-    height: 456px;
-    margin-right: 50px;
     box-sizing: border-box;
 }
 .title-card {
@@ -181,13 +187,13 @@ ul, li {
     padding: 43px 43px 34px 43px;
     max-width: 552px;
     width: 100%;
-    max-height: 456px;
+
 }
 .title-card h2{
     color: #ffff;
     font-size: 17px;
     font-weight: bold;
-    margin: 0px 0px 25px 0px;
+    margin: 0px 0px 22px 0px;
 }
 .paragraph {
     display: flex;
@@ -200,6 +206,7 @@ ul, li {
     font-weight: normal;
     line-height: 20px;
     box-sizing: border-box;
+    margin: 0;
 }
 .paragraph-col {
     max-width: 208px;
@@ -207,9 +214,6 @@ ul, li {
 }
 .img {
     margin-top: 11px;
-    width: 100%;
-    height: 100%;
-    max-height: 134px;
 }
 .small{
     margin-top: 25px;
@@ -285,3 +289,89 @@ ul, li {
     padding-top: 37px;
     padding-bottom: 30px;
 }
+
+/* Media queries */
+
+/* 992-1200px */
+@media screen and (max-width: 1200px) {
+
+}
+
+/* 768-992px */
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 700px;
+    }
+    .test-cards {
+        flex-direction: column;
+        row-gap: 25px;
+    }
+    .section {
+        flex-direction: column;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 20px;
+    }
+}
+
+/* 576-768px */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 500px;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+    .menu {
+        flex-direction: column;
+        row-gap: 4px;
+    }
+    .tel {
+        margin-top: 10px;
+    }
+
+    .title-card {
+        padding: 43px 23px 34px 23px;
+    }
+
+    
+
+}
+
+/* 320-576px */
+@media screen and (max-width: 576px) {
+    .container {
+        max-width: 80%;
+    }
+    .section-title, .sendform h2 {
+        width: 80%;
+    }
+    .message {
+        max-width: 250px;
+    }
+    .sendform {
+        max-width: 250px;
+    }
+
+    .section {
+        row-gap: 15px;
+    }
+    .paragraph {
+        flex-direction: column;
+        row-gap: 15px;
+        align-items: center;
+    }
+
+    .title-card h2 {
+        text-align: center;
+    }
+
+    .paragraph-col {
+        max-width: 100%;
+    }
+}
+    
